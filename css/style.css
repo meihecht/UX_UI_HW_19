@@ -1,0 +1,440 @@
+body{
+    background-color:#91A9BE;
+    font-family: 'Red Hat Display';font-size: 24px;
+    color:#D9D9D9;
+    padding-bottom:2.5rem;
+    min-height:100vh;
+    margin:0;
+    padding:0;
+    /* background-image: url(/images18/mountain2.jpg); */
+    /* background-position:top right; */
+    background-repeat:no-repeat;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#skillsGrid{
+    margin:40px;
+    display:grid;
+    min-height:500px;
+    height:75vh;
+    grid-template-rows: 100%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+    "firstSkill secondSkill thirdSkill";
+}
+
+#firstSkill {
+    grid-area:firstSkill;
+    /* border: black 1px solid; */
+}
+#firstSkill img{
+    margin:auto;
+    display:block;
+
+}
+/* #firstSkill li{
+    text-align: center;
+} */
+#secondSkill{
+    grid-area: secondSkill;
+    /* border: black 1px solid; */
+}
+#secondSkill img{
+    margin:auto;
+    display:block;
+}
+/* #secondSkill li{
+    text-align: center;
+} */
+#thirdSkill{
+    grid-area: thirdSkill;
+    /* border:black 1px solid; */
+}
+
+#thirdSkill img{
+    margin:auto;
+    display:block;
+}
+/* #thirdSkill li{
+    text-align:center;
+} */
+
+#skillsGrid h1{
+    text-align: center;
+}
+
+
+#projectGrid{
+    margin:40px;
+    display:grid;
+    min-height:500px;
+    height:200vh;
+    grid-template-rows:50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+    "firstProjectPic firstProject"
+    "brentsPlaceDes brentsPlacePic";
+
+}
+
+#firstProject{
+    grid-area: firstProject;
+    /* border:black solid 1px; */
+
+}
+#firstProjectPic{
+    grid-area: firstProjectPic;
+     /* border:black solid 1px; */
+}
+#brentsPlaceDes{
+    grid-area: brentsPlaceDes;
+    /* border:black solid 1px; */
+}
+
+#brentsPlacePic{
+    grid-area:brentsPlacePic;
+    /* border:black solid 1px; */
+    justify-content: center;
+}
+#brentsPlacePic img{
+    width:100%;
+    justify-content: center;
+}
+
+.projectGridArea h3{
+    color:black;
+    font-family: 'Red Hat Display';font-size: 64px;
+    text-align: center;
+    font-weight: bolder;
+}
+.projectGridArea p{
+    color:black;
+    font-family: 'Red Hat Display';font-size: 20px;
+    margin-left: 85px;
+}
+
+.inline-block{
+    display: inline-block;
+    vertical-align: top;
+    color:black;
+}
+.blob{
+    position: fixed;
+    margin-left: 503px;
+    margin-top:-190px;
+    z-index: -1;
+}
+.logo{
+    width:23%;
+    padding: 1%;
+    text-align: left;
+}
+.logo.active{
+    color:white;
+}
+.logo:hover{
+    color:black;
+}
+
+
+nav{
+    width:73%;
+    text-align:right;
+}
+
+header.navigation{
+    width:98%;
+    padding: 1%;
+
+}
+header.navigation ul{
+    display: inline-block;
+}
+
+
+header.navigation li{
+    padding:30px;
+    color:#D9D9D9;
+}
+header.navigation li.active{
+    color:#D9D9D9;
+
+}
+header.navigation li:hover{
+    font-weight:bold;
+    /* text-decoration-line: underline; */
+    color:black;
+
+}
+
+.content{
+    width:500px;
+    /* margin: 0 auto; */
+    padding-left:40px;
+}
+.content p{
+    padding-left:40px;
+    color:black;
+}
+.content img{
+    position: relative;
+    /* margin-bottom:-10px; */
+    /* padding-bottom:2.5rem; */
+}
+.content a {
+    text-decoration:none;
+    color:white;
+}
+
+.grid {
+    display: grid;
+    height:5vw;
+    width: 165vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    grid-template-areas:
+    "arrow"
+    ;
+
+}
+.gridChild {
+    margin:auto;
+    display:block;
+}
+.arrow {
+    grid-area: arrow;
+    text-align: center;
+    vertical-align: top;
+    /* width:2px; */
+}
+.bounceMe{
+    animation: bounceArrow .7s infinite;
+}
+.grid img{
+    width:60px;
+    /* color:red; */
+}
+
+footer{
+    width:98%;
+    padding: 1%;
+    z-index: 10;
+    text-align: right;   
+}
+.footer ul{
+    display:inline-block;
+
+}
+.footer li{
+    padding:30px;
+
+}
+.footer li.active{
+    color:black;
+}
+.footer li:hover{
+    font-weight:bold;
+    text-decoration-line: underline;
+}
+.resume{
+    border-radius: 20px;
+    background-color:#D9D9D9;
+    margin-left:40px;
+    font-weight:bold;
+    font-family: 'Red Hat Display';font-size: 18px;
+
+}
+.me{
+    border-radius:20px;
+    background-color:#D9D9D9;
+    font-family: 'Red Hat Display';font-size: 50px;
+    padding:10px;
+    font-weight:bolder;
+    margin-top:20px;
+    margin-left:10px;
+
+}
+
+.me.active{
+    background-color:#D9D9D9;
+}
+.me:hover{
+    background-color:#17578D;
+    color:#D9D9D9;
+}
+.resume.active{
+    background-color:#D9D9D9;
+}
+.resume:hover{
+    background-color:#17578D;
+    color:#D9D9D9;
+}
+.hi{
+    display: inline-block;
+    padding-left:40px;
+    padding-bottom:10px;
+    padding-top:75px;
+    
+}
+.hi h1{
+    animation:
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+    overflow:hidden;
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space:nowrap;
+    margin:0;
+
+
+
+
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color:black; }
+}
+@keyframes bounceArrow {
+    from {
+      margin-top: 0px;
+    }
+    50% {
+      margin-top: 7px;
+    }
+    to {
+      margin-top: 0px;
+    }
+  }
+
+.viewProject{
+    background-color:grey;
+    border-radius:20px;
+    font-family: 'Red Hat Display';font-size: 16.75px;
+    margin-left:170px;
+    color:white;
+}
+.viewProject2{
+    background-color:grey;
+    border-radius:20px;
+    font-family: 'Red Hat Display';font-size: 16.75px;
+    /* margin-left:170px; */
+    color:white;
+}
+
+
+#travelBuddyDes p{
+    margin-left:170px;
+    text-align: left;
+}
+
+#brentsPlaceDes h3{
+    font-family: 'Red Hat Display';font-size: 64px;
+    font-weight: bold;
+}
+#brentsPlaceDes p{
+    text-align: left;
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 600px){
+    #projectGrid{
+        margin:40px;
+        /* display:grid; */
+        /* min-height:500px; */
+        /* height:200vh; */
+        grid-template-rows:50% 50%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "firstProject"
+            "firstProjectPic" 
+            "brentsPlaceDes" 
+            "brentsPlacePic"
+        ;
+    
+    }
+
+    #skillsGrid{
+        margin:40px;
+        /* display:grid; */
+        /* min-height:500px; */
+        /* height:75vh; */
+        grid-template-rows: 100%;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "firstSkill" 
+            "secondSkill"
+            "thirdSkill"
+        ;
+
+    }
+    #firstProject{
+        grid-area: firstProject;
+        border:black solid 1px;
+    
+    }
+    #firstProjectPic{
+        grid-area: firstProjectPic;
+        border:black solid 1px;
+    }
+    #brentsPlaceDes{
+        grid-area: brentsPlaceDes;
+        border:black solid 1px;
+    }
+    
+    #brentsPlacePic{
+        grid-area:brentsPlacePic;
+        border:black solid 1px;
+        justify-content: center;
+    }
+    #brentsPlacePic img{
+        width:100%;
+        justify-content: center;
+    }
+    
+    .projectGridArea h3{
+        color:black;
+        font-family: 'Red Hat Display';font-size: 64px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .projectGridArea p{
+        color:black;
+        font-family: 'Red Hat Display';font-size: 20px;
+        /* margin-left: 85px; */
+        /* text-align: center; */
+    }
+
+
+
+
+    #firstSkill{
+        grid-area:firstSkill;
+        border: red 1px solid;
+    }
+    #secondSkill{
+        grid-area: secondSkill;
+        border:red 1px solid;
+    }
+    #thirdSkill{
+        grid-area: thirdSkill;
+        border:red 1px solid;
+    }
+    
+    #skillsGrid h1{
+        text-align: center;
+    }
+
+
+
+}
+
+
+
