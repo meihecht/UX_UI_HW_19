@@ -1,7 +1,8 @@
 body{
-    background-color:#91A9BE;
+    /* background-color:#91A9BE; */
+    background-image: linear-gradient(#91A9BE,#D9D9D9);
     font-family: 'Red Hat Display';font-size: 24px;
-    color:#D9D9D9;
+    /* color:#D9D9D9; */
     padding-bottom:2.5rem;
     min-height:100vh;
     margin:0;
@@ -18,16 +19,21 @@ html{
     margin:40px;
     display:grid;
     min-height:500px;
-    height:75vh;
-    grid-template-rows: 100%;
-    grid-template-columns: 33% 33% 33%;
+    height:100vh;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 100%;
     grid-template-areas:
-    "firstSkill secondSkill thirdSkill";
+    "firstSkill" 
+    "secondSkill" 
+    "thirdSkill";
 }
 
 #firstSkill {
     grid-area:firstSkill;
-    /* border: black 1px solid; */
+    border-top: black 1px solid;
+}
+#firstSkill h2{
+    font-weight:normal;
 }
 #firstSkill img{
     margin:auto;
@@ -39,7 +45,10 @@ html{
 } */
 #secondSkill{
     grid-area: secondSkill;
-    /* border: black 1px solid; */
+    border-top: black 1px solid;
+}
+#secondSkill h2{
+    font-weight: normal;    
 }
 #secondSkill img{
     margin:auto;
@@ -50,7 +59,10 @@ html{
 } */
 #thirdSkill{
     grid-area: thirdSkill;
-    /* border:black 1px solid; */
+    border-top:black 1px solid;
+}
+#thirdSkill h2{
+    font-weight: normal;
 }
 
 #thirdSkill img{
@@ -62,7 +74,8 @@ html{
 } */
 
 #skillsGrid h1{
-    text-align: center;
+    font-weight: bolder;
+    vertical-align: middle;
 }
 
 
@@ -70,12 +83,12 @@ html{
     margin:40px;
     display:grid;
     min-height:500px;
-    height:200vh;
-    grid-template-rows:50% 50%;
+    height:100vh;
+    grid-template-rows:100%;
     grid-template-columns: 50% 50%;
     grid-template-areas:
     "firstProjectPic firstProject"
-    "brentsPlaceDes brentsPlacePic";
+    ;
 
 }
 
@@ -83,25 +96,26 @@ html{
     grid-area: firstProject;
     /* border:black solid 1px; */
 
+
 }
 #firstProjectPic{
     grid-area: firstProjectPic;
-     /* border:black solid 1px; */
-}
-#brentsPlaceDes{
-    grid-area: brentsPlaceDes;
     /* border:black solid 1px; */
+}
+/* #brentsPlaceDes{
+    grid-area: brentsPlaceDes;
+    border:black solid 1px;
 }
 
 #brentsPlacePic{
     grid-area:brentsPlacePic;
-    /* border:black solid 1px; */
+    border:black solid 1px;
     justify-content: center;
 }
 #brentsPlacePic img{
     width:100%;
     justify-content: center;
-}
+} */
 
 .projectGridArea h3{
     color:black;
@@ -114,6 +128,12 @@ html{
     font-family: 'Red Hat Display';font-size: 20px;
     margin-left: 85px;
 }
+.projectGridArea img{
+    width:500px;
+    margin:auto;
+    display:block;
+}
+
 
 .inline-block{
     display: inline-block;
@@ -434,6 +454,18 @@ footer{
 
 
 
+}
+
+.path { 
+    stroke-dasharray: 3000; 
+    stroke-dashoffset: 3000; 
+    animation: dash 5s linear forwards infinite; 
+} 
+
+@keyframes dash { 
+    to { 
+        stroke-dashoffset: 0; 
+    } 
 }
 
 
