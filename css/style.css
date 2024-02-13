@@ -213,7 +213,7 @@ header.navigation li:hover{
     height:5vw;
     width: 165vh;
     grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    grid-template-rows: 33% 33% 33%;
 
     grid-template-areas:
     "arrow"
@@ -324,15 +324,15 @@ footer{
 }
 @keyframes bounceArrow {
     from {
-      margin-top: 0px;
+    margin-top: 0px;
     }
     50% {
-      margin-top: 7px;
+    margin-top: 7px;
     }
     to {
-      margin-top: 0px;
+    margin-top: 0px;
     }
-  }
+}
 
 .viewProject{
     background-color:grey;
@@ -373,10 +373,8 @@ footer{
         grid-template-rows:50% 50%;
         grid-template-columns: 100%;
         grid-template-areas:
-            "firstProject"
-            "firstProjectPic" 
-            "brentsPlaceDes" 
-            "brentsPlacePic"
+        "firstProject"
+        "firstProjectPic"
         ;
     
     }
@@ -389,9 +387,9 @@ footer{
         grid-template-rows: 100%;
         grid-template-columns: 100%;
         grid-template-areas:
-            "firstSkill" 
-            "secondSkill"
-            "thirdSkill"
+        "firstSkill" 
+        "secondSkill"
+        "thirdSkill"
         ;
 
     }
@@ -437,15 +435,15 @@ footer{
 
     #firstSkill{
         grid-area:firstSkill;
-        border: red 1px solid;
+        /* border: red 1px solid; */
     }
     #secondSkill{
         grid-area: secondSkill;
-        border:red 1px solid;
+        /* border:red 1px solid; */
     }
     #thirdSkill{
         grid-area: thirdSkill;
-        border:red 1px solid;
+        /* border:red 1px solid; */
     }
     
     #skillsGrid h1{
